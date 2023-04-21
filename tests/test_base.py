@@ -20,6 +20,7 @@ class MainTest(TestCase):
         response=self.client.get(url_for('index'))
         self.assertRedirects(response,url_for('hello'))
 
+    #prueba de GIT
     #probar que la aplicacion responde a hello con un get
     def test_hello_get(self):
         response=self.client.get(url_for('hello'))
